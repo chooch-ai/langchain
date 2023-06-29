@@ -15,6 +15,7 @@ from langchain.llms.beam import Beam
 from langchain.llms.bedrock import Bedrock
 from langchain.llms.cerebriumai import CerebriumAI
 from langchain.llms.clarifai import Clarifai
+from langchain.llms.choochai import ChoochAI
 from langchain.llms.cohere import Cohere
 from langchain.llms.ctransformers import CTransformers
 from langchain.llms.databricks import Databricks
@@ -52,6 +53,7 @@ from langchain.llms.textgen import TextGen
 from langchain.llms.vertexai import VertexAI
 from langchain.llms.writer import Writer
 
+
 __all__ = [
     "AI21",
     "AlephAlpha",
@@ -68,6 +70,7 @@ __all__ = [
     "CTransformers",
     "CerebriumAI",
     "Clarifai",
+    "ClarifAI",
     "Cohere",
     "Databricks",
     "DeepInfra",
@@ -122,6 +125,7 @@ type_to_cls_dict: Dict[str, Type[BaseLLM]] = {
     "beam": Beam,
     "cerebriumai": CerebriumAI,
     "clarifai": Clarifai,
+    "choochai": ChoochAI,
     "cohere": Cohere,
     "ctransformers": CTransformers,
     "databricks": Databricks,
